@@ -5,7 +5,7 @@ RUN apk add --no-cache chromium chromium-chromedriver unzip curl
 RUN apk add --update --no-cache py3-pip
 RUN apk add --no-cache xauth
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app_nodepay
 COPY app .
 RUN pip install --no-cache-dir -r ./requirements.txt --break-system-packages
 
